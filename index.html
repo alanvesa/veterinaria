@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veterinaria</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./veterinaria.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mi VETERINARIA</h1>
+
+    </header>
+    <div class="container">
+        <div class="organizarCita">
+            <h2>Ordenar por:</h2>
+            <input type="radio" name="estado" value="abierto" checked onchange="mostrar()" id="abierto">Abierto
+            <input type="radio" name="estado" value="cerrado" onchange="mostrar()" id="cerrado">Cerrado
+            <input type="radio" name="estado" value="cancelado" onchange="mostrar()" id="cancelado">Cancelado
+
+        </div>
+        <h6 id="alerta"></h6>
+        <div class="registrarCita">
+            <h2>Agendar Cita</h2>
+            <label>
+                <p>Nombre Mascota</p>
+                <input type="text" placeholder="Nombre Mascota" id="nombreMascota">
+            </label>
+            <label>
+                <p>Propietario</p>
+                <input type="text" placeholder="Nombre Propietario" id="propietario">
+            </label>
+            <label>
+                <p>telefono</p>
+                <input type="tel" placeholder="Telefono" id="telefono">
+            </label>
+            <label>
+                <p>Fecha</p>
+                <input type="date" placeholder="fecha" id="fecha">
+            </label>
+
+            <label>
+                <p>Hora</p>
+                <input type="time" placeholder="hora" id="hora">
+            </label>
+            <label>
+                <p>sintomas</p>
+                <input type="text" placeholder="sintomas" id="sintomas">
+            </label>
+
+            <label>
+                <p>Tipo de mascota</p>
+                <select name="" id="tipoMascota">
+                    <option value="perro">perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="raton">Raton</option>
+                    <option value="ave">Ave</option>
+                    <option value="serpiente">serpiente</option>
+                </select>
+
+            </label>
+
+            <input type="button" value="Registrar" onclick="validar()">
+        </div>
+
+
+    </div>
+    <div id="mostrarCitas">Citas</div>
+    <footer>
+        <P>Todos los derechos reservados</P>
+    </footer>
+
+</body>
+
+</html>

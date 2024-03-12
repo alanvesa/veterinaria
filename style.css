@@ -1,0 +1,126 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#alerta {
+    background-color: #ca0df0; 
+    color: #ffffff; 
+    text-align: center;
+ font-size: 200%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 60%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d8d8d8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #008080;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.organizarCita {
+    margin-bottom: 20px;
+}
+
+.registrarCita label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.registrarCita input,
+.registrarCita select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+input[type="button"] {
+    background-color: #008080;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-size: 150%;
+}
+
+input[type="button"]:hover {
+    background-color: #005555;
+}
+
+#mostrarCitas {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+
+}
+.card {
+    text-align: justify;
+    padding: 2%;
+
+    padding-left: 3%;
+    width: 80%;
+    height: auto;
+    border: solid 1px #005555;
+    margin: 2%;
+    border-radius: 5px;
+    margin-bottom: 10%;
+    background: #f4f4f4;
+    box-shadow: 7px 7px 14px #9b9c9e,
+        -7px -7px 14px #ffffff;
+}
+.imagen{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 15%;
+
+}
+.buton{
+    margin: 2%;
+    padding: 3%;
+    font-size: 110%;
+    border-radius: 6px;
+    border: none;
+    background-color: #005555;
+    color: #ffffff;
+}
+.buton:hover{
+    background-color: #008080;
+    color: #000000
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
