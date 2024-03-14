@@ -9,11 +9,11 @@ let op = null;
 let indice = null;
 
 let animales = [
-    { perro: "./imagenes/perro.png" },
-    { gato: "./imagenes/gato.png" },
-    { ave: "./imagenes/ave.png" },
-    { raton: "./imagenes/raton.png" },
-    { serpiente: "./imagenes/serpiente.png" },
+    { perro: "./perro.png" },
+    { gato: "./gato.png" },
+    { ave: "./ave.png" },
+    { raton: "./raton.png" },
+    { serpiente: "./serpiente.png" },
 
 ]
 
